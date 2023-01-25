@@ -1,0 +1,16 @@
+.app-header__logo .logo-src{max-width:190px;}
+
+
+.card-header{padding-left: 10px;}
+.add-new img{padding: 15px; color: var(--blue);}
+.app-screen .dropdown-menu{width: auto;min-width: auto;padding: 10px;}
+.app-screen .dropdown-item{padding: 5px;}
+.app-screen .dropdown-menu.show{transform: translate3d(-60px, 33px, 0px) !important;}
+@media (max-width: 767.98px)
+{
+    body .app-screen .card-header {display: flex;}
+}
+
+@media screen and (max-width:480px){
+    .app-screen .files{max-height: auto;}
+}
