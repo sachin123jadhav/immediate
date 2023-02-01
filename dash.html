@@ -210,6 +210,23 @@
             </ul>
           </div>
         </div>
+<div class="upload-wrap">
+        <div class="image-upload">
+          <input type="file" name="" id="logo" onchange="fileValue(this)" >
+          <label for="logo" class="upload-field" id="file-label">
+              <div class="file-thumbnail">
+                  <img id="image-preview" src="https://www.btklsby.go.id/images/placeholder/basic.png" alt="">
+                  <h3 id="filename">
+                      Drag and Drop
+                  </h3>
+                  <p >Supports JPG, PNG, SVG</p>
+              </div>
+          </label>
+      </div>
+
+      <input class="btn btn-primary btn-block" type="button" value="Submit">
+    </div>
+
       </div>
       <div class="app-main__outer">
         <div class="app-main__inner">
@@ -257,6 +274,15 @@
         
          
         </div>
+
+
+
+      
+
+
+
+
+
        
       </div>
       <div class="right-sidebar">
@@ -334,6 +360,21 @@
 
 
 
+
+<script>
+       function fileValue(value) {
+            var path = value.value;
+            var extenstion = path.split('.').pop();
+            if(extenstion == "jpg" || extenstion == "svg" || extenstion == "jpeg" || extenstion == "png"|| extenstion == "gif"){
+                document.getElementById('image-preview').src = window.URL.createObjectURL(value.files[0]);
+                var filename = path.replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.');
+                document.getElementById("filename").innerHTML = filename;
+            }else{
+                alert("File not supported. Kindly Upload the Image of below given extension ")
+            }
+        }
+  
+</script>
 
 
 </body>
