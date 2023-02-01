@@ -100,6 +100,8 @@
             </div>
           </div>
         </div>
+<button class="button btn btn-primary"><i class="fa-regular fa-comment"></i></button>
+
       </div>
     </div>
 
@@ -257,6 +259,19 @@
         </div>
        
       </div>
+      <div class="right-sidebar">
+<div class="chat-box">
+
+</div>
+        <div class="chat-input">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+      </div>
 
     </div>
   </div>
@@ -300,6 +315,27 @@
     })()
   </script>
   <script type="text/javascript" src="asset/main.js"></script>
+
+
+
+  <script>
+   (function () {
+  var button = document.querySelector(".button");
+  var box = document.querySelector(".right-sidebar");
+  var cont= document.querySelector(".app-main__outer");
+
+  button.addEventListener("click", function () {
+    box.classList.toggle("hidden");
+    cont.classList.toggle("right-show");
+  });
+})();
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>

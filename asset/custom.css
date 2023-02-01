@@ -6,6 +6,16 @@
 .app-screen .dropdown-menu{width: auto;min-width: auto;padding: 10px;}
 .app-screen .dropdown-item{padding: 5px;}
 .app-screen .dropdown-menu.show{transform: translate3d(-60px, 33px, 0px) !important;}
+
+
+.right-sidebar{width: 280px; position: absolute; right: 0; height: 100%; background-color: #fff;}
+.app-main__outer{padding-right: 280px;}
+.right-show{padding-right: 0;}
+
+.hidden{display: none;}
+.chat-box{height:95%; width: 100%;}
+.chat-input{position: fixed; bottom: 0;}
+
 @media (max-width: 767.98px)
 {
     body .app-screen .card-header {display: flex;}
